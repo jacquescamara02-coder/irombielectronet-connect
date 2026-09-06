@@ -40,6 +40,7 @@
   --color-signal-foreground: var(--signal-foreground);
   --color-steel: var(--steel);
   --color-whatsapp: var(--whatsapp);
+  --color-carbon: var(--carbon);
   --font-display: "Montserrat", system-ui, sans-serif;
   --font-sans: "Montserrat", system-ui, sans-serif;
 }
@@ -48,6 +49,7 @@
   --radius: 0.375rem;
 
   --background: oklch(1 0 0);
+  --carbon: #100e0b;
   --foreground: oklch(0.21 0.03 265);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.21 0.03 265);
@@ -102,7 +104,7 @@
   }
 
   body {
-    background-color: var(--color-background);
+    background-color: var(--color-carbon);
     color: var(--color-foreground);
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
@@ -133,8 +135,35 @@
 }
 
 @utility surface-navy {
-  background-image: var(--gradient-navy);
   color: var(--color-primary-foreground);
+}
+
+@utility carbon-page {
+  background-color: var(--color-carbon);
+}
+
+@utility aura-layer-1 {
+  background: linear-gradient(138deg, #05070c 0%, #0f172a 40%, #172554 70%, #1e3a8a 100%);
+  mix-blend-mode: normal;
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+@utility aura-layer-2 {
+  background: radial-gradient(ellipse 45% 50% at 72% 40%, rgb(96 165 250 / 20%) 0%, transparent 68%);
+  mix-blend-mode: screen;
+  filter: blur(105px);
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+@utility aura-grain {
+  mix-blend-mode: overlay;
+  opacity: 0.85;
+}
+
+@utility hero-image-wash {
+  background: linear-gradient(100deg, rgb(5 7 12 / 96%) 30%, rgb(15 23 42 / 70%) 100%);
 }
 
 @utility rule-signal {
@@ -226,5 +255,16 @@
   .reveal {
     opacity: 1 !important;
     transform: none !important;
+  }
+
+  .aura-layer-2 {
+    filter: blur(80px);
+    will-change: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .aura-layer-2 {
+    filter: blur(151px);
   }
 }

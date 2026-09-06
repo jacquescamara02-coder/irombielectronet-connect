@@ -24,6 +24,7 @@ import { CountUp } from "@/components/site/CountUp";
 import { ContactForm } from "@/components/site/ContactForm";
 import { MapEmbed } from "@/components/site/MapEmbed";
 import { TextBlockAnimation } from "@/components/ui/text-block-animation";
+import { AuraBackground } from "@/components/ui/aura-background";
 import { company, images, pillars, services, values, whatsappLink } from "@/lib/company";
 
 export const Route = createFileRoute("/")({
@@ -111,14 +112,14 @@ function SectionTitle({
 
 function Home() {
   return (
-    <div id="top" className="min-h-screen bg-background">
+    <div id="top" className="carbon-page min-h-screen">
       <Header />
       <FloatingActions />
 
       <main>
         {/* HERO */}
-        <section className="surface-navy relative overflow-hidden">
-          <div className="grid-tech absolute inset-0" aria-hidden="true" />
+        <section className="surface-navy relative min-h-screen overflow-hidden">
+          <AuraBackground />
           <div
             className="absolute inset-0 opacity-35"
             style={{
@@ -128,14 +129,7 @@ function Home() {
             }}
             aria-hidden="true"
           />
-          <div
-            className="absolute inset-0"
-            style={{
-              background:
-                "linear-gradient(100deg, oklch(0.24 0.085 269 / 0.96) 30%, oklch(0.24 0.085 269 / 0.7) 100%)",
-            }}
-            aria-hidden="true"
-          />
+          <div className="hero-image-wash absolute inset-0" aria-hidden="true" />
           <div
             className="sweep-line pointer-events-none absolute inset-y-0 -left-1/3 w-1/3 bg-gradient-to-r from-transparent via-white/10 to-transparent"
             aria-hidden="true"
@@ -225,7 +219,7 @@ function Home() {
         </section>
 
         {/* SOCIETE */}
-        <section id="societe" className="scroll-mt-28 py-20 lg:py-28">
+        <section id="societe" className="scroll-mt-28 bg-background py-20 lg:py-28">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <ContextualSectionBack sectionId="societe" />
             <Reveal>
@@ -333,7 +327,7 @@ function Home() {
         </section>
 
         {/* REALISATIONS */}
-        <section id="realisations" className="scroll-mt-28 py-20 lg:py-28">
+        <section id="realisations" className="scroll-mt-28 bg-background py-20 lg:py-28">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <ContextualSectionBack sectionId="realisations" />
             <Reveal>
@@ -376,8 +370,9 @@ function Home() {
         </section>
 
         {/* VALEURS */}
-        <section id="valeurs" className="surface-navy grid-tech scroll-mt-28 py-20 lg:py-28">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <section id="valeurs" className="surface-navy relative scroll-mt-28 overflow-hidden py-20 lg:py-28">
+          <AuraBackground />
+          <div className="relative z-1 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <ContextualSectionBack sectionId="valeurs" />
             <Reveal>
               <SectionTitle
@@ -404,7 +399,7 @@ function Home() {
         </section>
 
         {/* CONTACT */}
-        <section id="contact" className="scroll-mt-28 py-20 lg:py-28">
+        <section id="contact" className="scroll-mt-28 bg-background py-20 lg:py-28">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <ContextualSectionBack sectionId="contact" />
             <Reveal>

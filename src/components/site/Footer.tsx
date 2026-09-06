@@ -1,11 +1,13 @@
 import { Link } from "@tanstack/react-router";
 import { Mail, MapPin, Phone, Clock } from "lucide-react";
 import { company, images, services } from "@/lib/company";
+import { AuraBackground } from "@/components/ui/aura-background";
 
 export function Footer() {
   return (
-    <footer className="surface-navy grid-tech">
-      <div className="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-6 lg:grid-cols-4 lg:px-8">
+    <footer className="surface-navy relative overflow-hidden">
+      <AuraBackground />
+      <div className="relative z-1 mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-6 lg:grid-cols-4 lg:px-8">
         <div className="lg:col-span-2">
           <div className="inline-flex rounded-md bg-white p-3">
             <img
@@ -87,7 +89,7 @@ export function Footer() {
         </div>
       </div>
 
-      <div className="border-t border-white/10">
+      <div className="relative z-1 border-t border-white/10">
         <div className="mx-auto flex max-w-7xl flex-col gap-2 px-4 py-5 text-xs text-primary-foreground/60 sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:px-8">
           <p>
             © {new Date().getFullYear()} {company.legal}. Tous droits réservés.
