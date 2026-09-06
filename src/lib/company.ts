@@ -12,6 +12,16 @@ import cameraResidenceAsset from "@/assets/camera-residence.jpg.asset.json";
 import cctvAsset from "@/assets/cctv.jpg.asset.json";
 import heroLoopAsset from "@/assets/hero-loop.mp4.asset.json";
 import biometrieAsset from "@/assets/biometrie.jpg.asset.json";
+import realisation1Asset from "@/assets/realisation-1.jpg.asset.json";
+import realisation2Asset from "@/assets/realisation-2.jpg.asset.json";
+import realisation3Asset from "@/assets/realisation-3.jpg.asset.json";
+import realisation4Asset from "@/assets/realisation-4.jpg.asset.json";
+import realisation5Asset from "@/assets/realisation-5.jpg.asset.json";
+import realisation6Asset from "@/assets/realisation-6.jpg.asset.json";
+import realisation7Asset from "@/assets/realisation-7.jpg.asset.json";
+import realisation8Asset from "@/assets/realisation-8.jpg.asset.json";
+import realisation9Asset from "@/assets/realisation-9.jpg.asset.json";
+import realisation10Asset from "@/assets/realisation-10.jpg.asset.json";
 
 export const images = {
   logo: logoAsset.url,
