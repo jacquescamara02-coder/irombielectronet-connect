@@ -24,6 +24,7 @@ import { CountUp } from "@/components/site/CountUp";
 import { ContactForm } from "@/components/site/ContactForm";
 import { MapEmbed } from "@/components/site/MapEmbed";
 import { CatalogueFan } from "@/components/site/CatalogueFan";
+import { RealisationsGallery } from "@/components/site/RealisationsGallery";
 import { TextBlockAnimation } from "@/components/ui/text-block-animation";
 import { AuraBackground } from "@/components/ui/aura-background";
 import { Testimonial } from "@/components/ui/design-testimonial";
@@ -367,33 +368,7 @@ function Home() {
               />
             </Reveal>
 
-            <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-              {[
-                { src: images.cctv, caption: "Salle CCTV et mur d'écrans", span: "lg:col-span-2" },
-                { src: images.barriere, caption: "Barrière levante automatique", span: "" },
-                { src: images.brassage, caption: "Brassage de baie informatique", span: "" },
-                { src: images.biometrie, caption: "Contrôle d'accès biométrique", span: "" },
-                { src: images.cameras, caption: "Caméras IP et analogiques", span: "" },
-              ].map((item, i) => (
-                <Reveal key={item.caption} delay={i * 70} className={item.span}>
-                  <figure className="card-lift group h-full overflow-hidden rounded-lg border border-border bg-card">
-                    <div className="overflow-hidden">
-                      <img
-                        src={item.src}
-                        alt={item.caption}
-                        className="h-56 w-full object-cover transition-transform duration-500 ease-[var(--ease-out-soft)] group-hover:scale-105"
-                        loading="lazy"
-                        width={720}
-                        height={420}
-                      />
-                    </div>
-                    <figcaption className="px-5 py-4 text-sm font-medium text-foreground">
-                      {item.caption}
-                    </figcaption>
-                  </figure>
-                </Reveal>
-              ))}
-            </div>
+            <RealisationsGallery />
 
           </div>
         </section>
