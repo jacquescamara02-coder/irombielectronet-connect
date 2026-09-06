@@ -26,6 +26,7 @@ import { MapEmbed } from "@/components/site/MapEmbed";
 import { CatalogueFan } from "@/components/site/CatalogueFan";
 import { TextBlockAnimation } from "@/components/ui/text-block-animation";
 import { AuraBackground } from "@/components/ui/aura-background";
+import { Testimonial } from "@/components/ui/design-testimonial";
 import { company, images, pillars, services, values, whatsappLink } from "@/lib/company";
 
 export const Route = createFileRoute("/")({
@@ -394,6 +395,23 @@ function Home() {
               ))}
             </div>
 
+          </div>
+        </section>
+
+        {/* AVIS CLIENTS */}
+        <section id="avis" className="scroll-mt-28 bg-secondary/60 py-20 lg:py-28">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <ContextualSectionBack sectionId="avis" />
+            <Reveal>
+              <SectionTitle
+                eyebrow="Avis clients"
+                title="Ils nous confient leurs installations, ils témoignent"
+                text="Entreprises et sites industriels de Port-Gentil partagent leur expérience avec nos équipes."
+              />
+            </Reveal>
+            <Reveal delay={120}>
+              <Testimonial />
+            </Reveal>
           </div>
         </section>
 
