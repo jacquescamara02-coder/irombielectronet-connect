@@ -6,6 +6,7 @@ import { company, images } from "@/lib/company";
 const nav = [
   { label: "Société", href: "/#societe" },
   { label: "Services", href: "/#services" },
+  { label: "Catalogue", href: "/#catalogue" },
   { label: "Réalisations", href: "/#realisations" },
   { label: "Valeurs", href: "/#valeurs" },
   { label: "Contact", href: "/#contact" },

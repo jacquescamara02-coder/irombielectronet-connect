@@ -183,6 +183,142 @@
   }
 }
 
+/* Catalogue en éventail — inspiré du mouvement de la référence client */
+.catalogue-stage {
+  --catalogue-gap: clamp(3.75rem, 10vw, 9.5rem);
+  position: relative;
+  min-height: clamp(27rem, 51vw, 42rem);
+  margin-top: 3rem;
+  perspective: 1400px;
+  isolation: isolate;
+}
+
+.catalogue-panel {
+  --catalogue-index: 0;
+  --catalogue-rotate: -12deg;
+  --catalogue-y: 4.5rem;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: clamp(10.5rem, 23vw, 18rem);
+  aspect-ratio: 0.68;
+  overflow: hidden;
+  border: 1px solid color-mix(in oklab, var(--color-primary) 15%, transparent);
+  border-radius: var(--radius-xl);
+  background: var(--color-card);
+  box-shadow: var(--shadow-card);
+  transform: translateX(calc(-50% + (var(--catalogue-index) - 2.5) * var(--catalogue-gap)))
+    translateY(var(--catalogue-y)) rotate(var(--catalogue-rotate));
+  transform-origin: 50% 110%;
+  transition:
+    transform 420ms var(--ease-out-soft),
+    box-shadow 300ms var(--ease-out-soft),
+    filter 300ms var(--ease-out-soft);
+  z-index: calc(10 - abs(var(--catalogue-index) - 3));
+}
+
+.catalogue-panel:nth-child(1) { --catalogue-index: 0; --catalogue-rotate: -13deg; --catalogue-y: 6rem; }
+.catalogue-panel:nth-child(2) { --catalogue-index: 1; --catalogue-rotate: -8deg; --catalogue-y: 2.75rem; }
+.catalogue-panel:nth-child(3) { --catalogue-index: 2; --catalogue-rotate: -3deg; --catalogue-y: 0.5rem; }
+.catalogue-panel:nth-child(4) { --catalogue-index: 3; --catalogue-rotate: 3deg; --catalogue-y: 0.5rem; }
+.catalogue-panel:nth-child(5) { --catalogue-index: 4; --catalogue-rotate: 8deg; --catalogue-y: 2.75rem; }
+.catalogue-panel:nth-child(6) { --catalogue-index: 5; --catalogue-rotate: 13deg; --catalogue-y: 6rem; }
+
+.catalogue-panel:hover,
+.catalogue-panel:focus-visible {
+  transform: translateX(calc(-50% + (var(--catalogue-index) - 2.5) * var(--catalogue-gap)))
+    translateY(calc(var(--catalogue-y) - 1.25rem)) rotate(0deg) scale(1.055);
+  box-shadow: var(--shadow-lift);
+  z-index: 20;
+}
+
+.catalogue-panel-image,
+.catalogue-panel-wash {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.catalogue-panel-image {
+  object-fit: cover;
+  transition: transform 650ms var(--ease-out-soft), filter 350ms var(--ease-out-soft);
+}
+
+.catalogue-panel:hover .catalogue-panel-image,
+.catalogue-panel:focus-visible .catalogue-panel-image {
+  transform: scale(1.07);
+  filter: saturate(1.08);
+}
+
+.catalogue-panel-wash {
+  background: linear-gradient(to top, color-mix(in oklab, var(--color-navy-deep) 92%, transparent), transparent 60%);
+}
+
+.catalogue-panel-content {
+  position: absolute;
+  inset: auto 0 0;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 1.25rem;
+  color: var(--color-primary-foreground);
+}
+
+.catalogue-panel-title {
+  max-width: 12rem;
+  font-size: clamp(0.75rem, 1.25vw, 0.95rem);
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.catalogue-panel-icon {
+  width: 1.2rem;
+  height: 1.2rem;
+  flex: none;
+  color: var(--color-signal);
+  transition: transform 220ms var(--ease-out-soft);
+}
+
+.catalogue-panel:hover .catalogue-panel-icon,
+.catalogue-panel:focus-visible .catalogue-panel-icon {
+  transform: translate(0.15rem, -0.15rem);
+}
+
+@media (max-width: 767px) {
+  .catalogue-stage {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 76%;
+    gap: 0.875rem;
+    min-height: auto;
+    margin-right: -1rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    perspective: none;
+    padding: 0 1rem 1.25rem 0;
+  }
+
+  .catalogue-stage::-webkit-scrollbar { display: none; }
+
+  .catalogue-panel,
+  .catalogue-panel:nth-child(n) {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 100%;
+    transform: none;
+    scroll-snap-align: start;
+  }
+
+  .catalogue-panel:hover,
+  .catalogue-panel:focus-visible {
+    transform: translateY(-0.25rem);
+  }
+}
+
 @utility grid-tech {
   background-image:
     linear-gradient(oklch(1 0 0 / 0.045) 1px, transparent 1px),
