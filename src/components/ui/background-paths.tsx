@@ -26,20 +26,18 @@ function FloatingPaths({ position }: { position: number }) {
           strokeWidth={path.width}
           strokeOpacity={path.opacity}
           initial={reduce ? false : { pathLength: 0.3, opacity: 0.4 }}
-          animate={
-            reduce
-              ? undefined
-              : {
-                  pathLength: 1,
-                  opacity: [0.2, 0.5, 0.2],
-                  pathOffset: [0, 1, 2],
-                }
-          }
-          transition={{
-            duration: 20 + (path.id % 10) * 2,
-            repeat: Number.POSITIVE_INFINITY,
-            ease: "linear",
-          }}
+          {...(!reduce && {
+            animate: {
+              pathLength: 1,
+              opacity: [0.2, 0.5, 0.2],
+              pathOffset: [0, 1, 2],
+            },
+            transition: {
+              duration: 20 + (path.id % 10) * 2,
+              repeat: Number.POSITIVE_INFINITY,
+              ease: "linear" as const,
+            },
+          })}
         />
       ))}
     </svg>
