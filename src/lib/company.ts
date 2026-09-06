@@ -53,6 +53,8 @@ export const realisations = [
   { src: realisation9Asset.url, caption: "Poste de contrôle multi-écrans d'un poste de garde" },
   { src: realisation3Asset.url, caption: "Caméra et projecteur sur mât extérieur" },
   { src: realisation4Asset.url, caption: "Ensemble de caméras longue portée sur mât" },
+  { src: realisation11Asset.url, caption: "Intervention sur mât de vidéosurveillance et antennes" },
+  { src: realisation12Asset.url, caption: "Caméra et projecteur LED sur mât extérieur" },
 ];
 
 export const company = {
