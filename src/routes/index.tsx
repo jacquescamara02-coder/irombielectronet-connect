@@ -118,8 +118,7 @@ function Home() {
 
       <main>
         {/* HERO */}
-        <section className="surface-navy relative min-h-screen overflow-hidden">
-          <AuraBackground />
+        <section className="surface-navy relative min-h-screen overflow-hidden bg-[image:var(--gradient-navy)]">
           <div
             className="absolute inset-0 opacity-35"
             style={{
