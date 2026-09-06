@@ -420,6 +420,14 @@ function Home() {
           </div>
         </section>
 
+        {/* FAQ */}
+        <section id="faq" className="scroll-mt-28 bg-secondary/60 py-20 lg:py-28">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <ContextualSectionBack sectionId="faq" />
+            <Faq />
+          </div>
+        </section>
+
         {/* CONTACT */}
         <section id="contact" className="scroll-mt-28 bg-background py-20 lg:py-28">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
