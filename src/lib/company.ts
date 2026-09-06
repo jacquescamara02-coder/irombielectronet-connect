@@ -8,6 +8,7 @@ import barriere2Asset from "@/assets/barriere2.jpg.asset.json";
 import incendieAsset from "@/assets/incendie.jpg.asset.json";
 import brassageAsset from "@/assets/brassage.jpg.asset.json";
 import installcamAsset from "@/assets/installcam.jpg.asset.json";
+import cameraResidenceAsset from "@/assets/camera-residence.jpg.asset.json";
 import cctvAsset from "@/assets/cctv.jpg.asset.json";
 import biometrieAsset from "@/assets/biometrie.jpg.asset.json";
 
@@ -22,6 +23,7 @@ export const images = {
   incendie: incendieAsset.url,
   brassage: brassageAsset.url,
   installcam: installcamAsset.url,
+  cameraResidence: cameraResidenceAsset.url,
   cctv: cctvAsset.url,
   biometrie: biometrieAsset.url,
 };
@@ -60,7 +62,7 @@ export const services: Service[] = [
     title: "Vidéosurveillance IP & analogique",
     short:
       "Installation, configuration et maintenance de caméras IP et analogiques, salles CCTV et supervision à distance.",
-    image: images.installcam,
+    image: images.cameraResidence,
     gallery: [
       { src: images.installcam, caption: "Pose et réglage de caméra extérieure" },
       { src: images.cctv, caption: "Salle CCTV et mur d'écrans" },
