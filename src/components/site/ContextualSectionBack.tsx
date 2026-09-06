@@ -21,7 +21,7 @@ export function ContextualSectionBack({ sectionId }: { sectionId: string }) {
         window.scrollTo({ top: 0, behavior: "smooth" });
         setIsActive(false);
       }}
-      className="group mb-8 inline-flex items-center gap-2 rounded-md border border-border bg-background px-4 py-2.5 text-sm font-semibold text-foreground shadow-[var(--shadow-card)] transition-all duration-200 hover:-translate-y-0.5 hover:border-accent hover:text-accent"
+      className="orbit-border group mb-8 inline-flex items-center gap-2 rounded-md border border-border bg-background px-4 py-2.5 text-sm font-semibold text-foreground shadow-[var(--shadow-card)] transition-all duration-200 hover:-translate-y-0.5 hover:border-accent hover:text-accent"
       aria-label="Retourner à l’accueil"
     >
       <ArrowLeft className="size-4 transition-transform duration-200 group-hover:-translate-x-0.5" />

@@ -61,7 +61,7 @@ export function Header() {
         <div className="flex items-center gap-2">
           <a
             href={`tel:${company.phones[1]?.replace(/\s/g, "")}`}
-            className={`hidden items-center gap-2 rounded-full px-4 py-2 text-sm font-semibold transition-all duration-200 hover:-translate-y-0.5 sm:inline-flex ${
+            className={`orbit-border hidden items-center gap-2 rounded-full px-4 py-2 text-sm font-semibold transition-all duration-200 hover:-translate-y-0.5 sm:inline-flex ${
               scrolled
                 ? "bg-primary text-primary-foreground"
                 : "bg-primary-foreground/12 text-primary-foreground ring-1 ring-white/25 ring-inset"

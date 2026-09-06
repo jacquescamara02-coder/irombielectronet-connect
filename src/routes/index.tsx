@@ -166,14 +166,14 @@ function Home() {
                 <div className="mt-9 flex flex-wrap gap-3">
                   <a
                     href="#contact"
-                    className="inline-flex items-center gap-2 rounded-md bg-[var(--color-signal)] px-6 py-3.5 text-sm font-semibold text-[var(--color-signal-foreground)] transition-transform duration-200 hover:-translate-y-0.5"
+                    className="orbit-border inline-flex items-center gap-2 rounded-md bg-[var(--color-signal)] px-6 py-3.5 text-sm font-semibold text-[var(--color-signal-foreground)] transition-transform duration-200 hover:-translate-y-0.5"
                   >
                     Demander un devis
                     <ArrowRight className="size-4" />
                   </a>
                   <a
                     href="#services"
-                    className="inline-flex items-center gap-2 rounded-md border border-white/25 px-6 py-3.5 text-sm font-semibold text-primary-foreground transition-colors duration-200 hover:bg-white/10"
+                    className="orbit-border inline-flex items-center gap-2 rounded-md border border-white/25 px-6 py-3.5 text-sm font-semibold text-primary-foreground transition-colors duration-200 hover:bg-white/10"
                   >
                     Voir nos prestations
                   </a>
@@ -458,7 +458,7 @@ function Home() {
                         )}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex w-full items-center justify-center gap-2 rounded-md bg-[var(--color-whatsapp)] px-4 py-3 text-sm font-semibold text-white transition-transform duration-200 hover:-translate-y-0.5"
+                        className="orbit-border inline-flex w-full items-center justify-center gap-2 rounded-md bg-[var(--color-whatsapp)] px-4 py-3 text-sm font-semibold text-white transition-transform duration-200 hover:-translate-y-0.5"
                       >
                         Écrire sur WhatsApp · {company.whatsappDisplay}
                       </a>
