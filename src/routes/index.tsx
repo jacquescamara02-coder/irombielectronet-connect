@@ -25,6 +25,7 @@ import { ContactForm } from "@/components/site/ContactForm";
 import { MapEmbed } from "@/components/site/MapEmbed";
 import { CatalogueFan } from "@/components/site/CatalogueFan";
 import { RealisationsGallery } from "@/components/site/RealisationsGallery";
+import { Faq } from "@/components/site/Faq";
 import { TextBlockAnimation } from "@/components/ui/text-block-animation";
 import { AuraBackground } from "@/components/ui/aura-background";
 import { Testimonial } from "@/components/ui/design-testimonial";
