@@ -40,6 +40,19 @@ export const images = {
   biometrie: biometrieAsset.url,
 };
 
+export const realisations = [
+  { src: realisation2Asset.url, caption: "Salle de supervision et mur d'écrans CCTV" },
+  { src: realisation1Asset.url, caption: "Caméras dôme et bullet en environnement commercial" },
+  { src: realisation6Asset.url, caption: "Mur de monitoring multi-caméras d'un site portuaire" },
+  { src: realisation5Asset.url, caption: "Supervision vidéo d'une zone industrielle" },
+  { src: realisation7Asset.url, caption: "Mât de vidéosurveillance et liaison radio en zone ouverte" },
+  { src: realisation8Asset.url, caption: "Installation d'un coffret réseau mural" },
+  { src: realisation10Asset.url, caption: "Brassage et maintenance d'une baie de communication" },
+  { src: realisation9Asset.url, caption: "Poste de contrôle multi-écrans d'un poste de garde" },
+  { src: realisation3Asset.url, caption: "Caméra et projecteur sur mât extérieur" },
+  { src: realisation4Asset.url, caption: "Ensemble de caméras longue portée sur mât" },
+];
+
 export const company = {
   name: "IROMBI-ELECTRONET",
   legal: "IROMBI-ELECTRONET SARL",
