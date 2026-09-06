@@ -8,6 +8,7 @@ import barriere2Asset from "@/assets/barriere2.jpg.asset.json";
 import incendieAsset from "@/assets/incendie.jpg.asset.json";
 import brassageAsset from "@/assets/brassage.jpg.asset.json";
 import installcamAsset from "@/assets/installcam.jpg.asset.json";
+import cameraResidenceAsset from "@/assets/camera-residence.jpg.asset.json";
 import cctvAsset from "@/assets/cctv.jpg.asset.json";
 import biometrieAsset from "@/assets/biometrie.jpg.asset.json";
 
