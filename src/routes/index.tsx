@@ -177,7 +177,7 @@ function Home() {
               <Reveal delay={220}>
                 <div className="overflow-hidden rounded-lg ring-1 ring-white/15">
                   <img
-                    src={images.installcam}
+                    src={images.heroInstall}
                     alt="Technicien IROMBI-ELECTRONET installant une caméra de surveillance"
                     className="h-64 w-full object-cover sm:h-80 lg:h-[420px]"
                     width={800}
