@@ -80,13 +80,13 @@ export function ContactForm() {
             href={whatsappLink(buildSummary())}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-md bg-[var(--color-whatsapp)] px-4 py-2.5 text-sm font-semibold text-white transition-transform duration-200 hover:-translate-y-0.5"
+            className="orbit-border inline-flex items-center gap-2 rounded-md bg-[var(--color-whatsapp)] px-4 py-2.5 text-sm font-semibold text-white transition-transform duration-200 hover:-translate-y-0.5"
           >
             <WhatsAppIcon className="size-4" /> Rouvrir WhatsApp
           </a>
           <a
             href={`mailto:${company.email}?subject=${encodeURIComponent("Demande de devis")}&body=${encodeURIComponent(buildSummary())}`}
-            className="inline-flex items-center gap-2 rounded-md border border-input px-4 py-2.5 text-sm font-semibold text-foreground transition-colors duration-200 hover:border-accent hover:text-accent"
+            className="orbit-border inline-flex items-center gap-2 rounded-md border border-input px-4 py-2.5 text-sm font-semibold text-foreground transition-colors duration-200 hover:border-accent hover:text-accent"
           >
             <Mail className="size-4" /> Envoyer par e-mail
           </a>
@@ -214,7 +214,7 @@ export function ContactForm() {
       <button
         type="submit"
         disabled={sending}
-        className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-md bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground transition-all duration-200 hover:-translate-y-0.5 hover:bg-[var(--navy-deep)] disabled:translate-y-0 disabled:opacity-70 sm:w-auto"
+        className="orbit-border mt-6 inline-flex w-full items-center justify-center gap-2 rounded-md bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground transition-all duration-200 hover:-translate-y-0.5 hover:bg-[var(--navy-deep)] disabled:translate-y-0 disabled:opacity-70 sm:w-auto"
       >
         {sending ? (
           <>

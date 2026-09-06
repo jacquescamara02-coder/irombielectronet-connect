@@ -45,7 +45,7 @@ function BackControl() {
           router.navigate({ to: "/", hash: "services" });
         }
       }}
-      className="group inline-flex items-center gap-2 rounded-full border border-white/25 px-4 py-2 text-sm font-medium text-primary-foreground transition-all duration-200 hover:-translate-y-0.5 hover:bg-white/10"
+      className="orbit-border group inline-flex items-center gap-2 rounded-full border border-white/25 px-4 py-2 text-sm font-medium text-primary-foreground transition-all duration-200 hover:-translate-y-0.5 hover:bg-white/10"
     >
       <ArrowLeft className="size-4 transition-transform duration-200 group-hover:-translate-x-0.5" />
       Retour
@@ -132,7 +132,7 @@ function ServicePage() {
                     <Link
                       to="/"
                       hash="contact"
-                      className="inline-flex items-center gap-2 rounded-md bg-primary px-4 py-2.5 text-sm font-semibold text-primary-foreground transition-transform duration-200 hover:-translate-y-0.5"
+                      className="orbit-border inline-flex items-center gap-2 rounded-md bg-primary px-4 py-2.5 text-sm font-semibold text-primary-foreground transition-transform duration-200 hover:-translate-y-0.5"
                     >
                       Demander un devis <ArrowRight className="size-4" />
                     </Link>
@@ -142,7 +142,7 @@ function ServicePage() {
                       )}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 rounded-md border border-input px-4 py-2.5 text-sm font-semibold text-foreground transition-colors duration-200 hover:border-accent hover:text-accent"
+                      className="orbit-border inline-flex items-center gap-2 rounded-md border border-input px-4 py-2.5 text-sm font-semibold text-foreground transition-colors duration-200 hover:border-accent hover:text-accent"
                     >
                       WhatsApp
                     </a>
@@ -179,7 +179,7 @@ function ServicePage() {
               <Link
                 to="/"
                 hash="services"
-                className="group inline-flex items-center gap-2 rounded-full border border-border bg-background px-4 py-2 text-sm font-medium text-muted-foreground transition-all duration-200 hover:-translate-y-0.5 hover:border-accent hover:text-accent"
+                className="orbit-border group inline-flex items-center gap-2 rounded-full border border-border bg-background px-4 py-2 text-sm font-medium text-muted-foreground transition-all duration-200 hover:-translate-y-0.5 hover:border-accent hover:text-accent"
               >
                 <ArrowLeft className="size-4 transition-transform duration-200 group-hover:-translate-x-0.5" />
                 Retour aux services

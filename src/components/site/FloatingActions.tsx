@@ -40,7 +40,7 @@ export function FloatingActions() {
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Discuter sur WhatsApp"
-        className="pulse-ring group inline-flex items-center gap-2 rounded-full bg-[var(--color-whatsapp)] py-3 pr-4 pl-3 font-semibold text-white shadow-[var(--shadow-lift)] transition-transform duration-200 hover:-translate-y-1"
+        className="pulse-ring orbit-border group inline-flex items-center gap-2 rounded-full bg-[var(--color-whatsapp)] py-3 pr-4 pl-3 font-semibold text-white shadow-[var(--shadow-lift)] transition-transform duration-200 hover:-translate-y-1"
       >
         <WhatsAppIcon className="size-6" />
         <span className="hidden text-sm sm:inline">WhatsApp</span>
