@@ -120,7 +120,7 @@ function Home() {
         {/* HERO */}
         <section className="surface-navy relative min-h-screen overflow-hidden bg-[image:var(--gradient-navy)]">
           <video
-            className="absolute inset-0 h-full w-full object-cover opacity-70 motion-reduce:hidden"
+            className="absolute inset-0 h-full w-full object-cover opacity-80 brightness-110 contrast-110 motion-reduce:hidden"
             src={images.heroLoop}
             poster={images.heroCctv}
             autoPlay
