@@ -1,6 +1,7 @@
 import logoAsset from "@/assets/logo.jpg.asset.json";
 import camerasAsset from "@/assets/cameras.jpg.asset.json";
 import teamRackAsset from "@/assets/team-rack.jpg.asset.json";
+import heroCctvAsset from "@/assets/hero-cctv.jpg.asset.json";
 import barriereAsset from "@/assets/barriere.jpg.asset.json";
 import barriere2Asset from "@/assets/barriere2.jpg.asset.json";
 import incendieAsset from "@/assets/incendie.jpg.asset.json";
@@ -13,6 +14,7 @@ export const images = {
   logo: logoAsset.url,
   cameras: camerasAsset.url,
   teamRack: teamRackAsset.url,
+  heroCctv: heroCctvAsset.url,
   barriere: barriereAsset.url,
   barriere2: barriere2Asset.url,
   incendie: incendieAsset.url,
