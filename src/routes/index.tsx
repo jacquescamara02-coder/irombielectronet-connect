@@ -144,7 +144,7 @@ function Home() {
                 </span>
               </Reveal>
               <Reveal delay={90}>
-                <h1 className="mt-6 text-5xl font-semibold text-primary-foreground sm:text-6xl lg:text-7xl">
+                <h1 className="mt-6 text-[2.2rem] font-semibold break-words hyphens-auto text-primary-foreground sm:text-6xl lg:text-7xl">
                   Vidéosurveillance, réseaux et télécommunications d'entreprise
                 </h1>
               </Reveal>

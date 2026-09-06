@@ -156,10 +156,11 @@
 
 @utility grid-tech {
   background-image:
-    linear-gradient(oklch(1 0 0 / 0.06) 1px, transparent 1px),
-    linear-gradient(90deg, oklch(1 0 0 / 0.06) 1px, transparent 1px);
-  background-size: 64px 64px;
+    linear-gradient(oklch(1 0 0 / 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, oklch(1 0 0 / 0.045) 1px, transparent 1px);
+  background-size: 96px 96px;
 }
+
 
 /* Scroll reveal */
 @utility reveal {
