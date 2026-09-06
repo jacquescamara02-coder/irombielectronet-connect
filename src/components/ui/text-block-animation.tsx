@@ -72,17 +72,18 @@ export function TextBlockAnimation({
         blocks.push(block);
       });
 
-      const tl = gsap.timeline({
+      const tlVars: gsap.TimelineVars = {
         defaults: { ease: "expo.inOut" },
-        scrollTrigger: animateOnScroll
-          ? {
-              trigger: container,
-              start: "top 85%",
-              toggleActions: "play none none reverse",
-            }
-          : undefined,
         delay,
-      });
+      };
+      if (animateOnScroll) {
+        tlVars.scrollTrigger = {
+          trigger: container,
+          start: "top 85%",
+          toggleActions: "play none none reverse",
+        };
+      }
+      const tl = gsap.timeline(tlVars);
 
       tl.to(blocks, {
         scaleX: 1,
