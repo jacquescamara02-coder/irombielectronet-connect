@@ -25,6 +25,7 @@ import { ContactForm } from "@/components/site/ContactForm";
 import { MapEmbed } from "@/components/site/MapEmbed";
 import { CatalogueFan } from "@/components/site/CatalogueFan";
 import { RealisationsGallery } from "@/components/site/RealisationsGallery";
+import { Faq } from "@/components/site/Faq";
 import { TextBlockAnimation } from "@/components/ui/text-block-animation";
 import { AuraBackground } from "@/components/ui/aura-background";
 import { Testimonial } from "@/components/ui/design-testimonial";
@@ -416,6 +417,14 @@ function Home() {
               ))}
             </div>
 
+          </div>
+        </section>
+
+        {/* FAQ */}
+        <section id="faq" className="scroll-mt-28 bg-secondary/60 py-20 lg:py-28">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <ContextualSectionBack sectionId="faq" />
+            <Faq />
           </div>
         </section>
 
