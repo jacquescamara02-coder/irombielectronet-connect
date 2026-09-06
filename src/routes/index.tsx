@@ -23,6 +23,7 @@ import { Reveal } from "@/components/site/Reveal";
 import { CountUp } from "@/components/site/CountUp";
 import { ContactForm } from "@/components/site/ContactForm";
 import { MapEmbed } from "@/components/site/MapEmbed";
+import { TextBlockAnimation } from "@/components/ui/text-block-animation";
 import { company, images, pillars, services, values, whatsappLink } from "@/lib/company";
 
 export const Route = createFileRoute("/")({
@@ -84,21 +85,25 @@ function SectionTitle({
       >
         {eyebrow}
       </p>
-      <h2
+      <TextBlockAnimation
+        blockColor={light ? "var(--color-signal)" : "var(--color-primary)"}
         className={`mt-3 text-4xl font-semibold sm:text-5xl ${
           light ? "text-primary-foreground" : "text-foreground"
         }`}
       >
-        {title}
-      </h2>
+        <h2>{title}</h2>
+      </TextBlockAnimation>
       {text && (
-        <p
+        <TextBlockAnimation
+          delay={0.15}
+          stagger={0.05}
+          blockColor={light ? "var(--color-signal)" : "var(--color-accent)"}
           className={`mt-4 text-base/7 ${
             light ? "text-primary-foreground/75" : "text-muted-foreground"
           }`}
         >
-          {text}
-        </p>
+          <p>{text}</p>
+        </TextBlockAnimation>
       )}
     </div>
   );
@@ -143,17 +148,27 @@ function Home() {
                   Port-Gentil · Gabon · Depuis plus de 4 ans
                 </span>
               </Reveal>
-              <Reveal delay={90}>
-                <h1 className="mt-6 text-[2.2rem] font-semibold break-words hyphens-auto text-primary-foreground sm:text-6xl lg:text-7xl">
+              <h1 className="mt-6 text-[2.2rem] font-semibold break-words hyphens-auto text-primary-foreground sm:text-6xl lg:text-7xl">
+                <TextBlockAnimation
+                  animateOnScroll={false}
+                  delay={0.25}
+                  blockColor="var(--color-signal)"
+                >
                   Vidéosurveillance, réseaux et télécommunications d'entreprise
-                </h1>
-              </Reveal>
-              <Reveal delay={180}>
-                <p className="mt-6 max-w-xl text-lg/8 text-primary-foreground/80">
+                </TextBlockAnimation>
+              </h1>
+              <TextBlockAnimation
+                animateOnScroll={false}
+                delay={0.55}
+                stagger={0.05}
+                blockColor="var(--color-signal)"
+                className="mt-6 max-w-xl text-lg/8 text-primary-foreground/80"
+              >
+                <p>
                   {company.legal} installe, met en service et maintient vos caméras IP, vos baies
                   informatiques, vos systèmes VHF et VoIP.
                 </p>
-              </Reveal>
+              </TextBlockAnimation>
               <Reveal delay={260}>
                 <div className="mt-9 flex flex-wrap gap-3">
                   <a
