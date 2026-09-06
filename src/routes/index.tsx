@@ -78,7 +78,7 @@ function SectionTitle({
   light?: boolean;
 }) {
   return (
-    <div className="max-w-2xl">
+    <div className="w-full">
       <p
         className={`text-xs font-semibold tracking-[0.22em] uppercase ${
           light ? "text-[var(--color-signal)]" : "text-accent"
@@ -99,7 +99,7 @@ function SectionTitle({
           delay={0.15}
           stagger={0.05}
           blockColor={light ? "var(--color-signal)" : "var(--color-accent)"}
-          className={`mt-4 text-base/7 ${
+          className={`mt-4 max-w-5xl text-base/7 ${
             light ? "text-primary-foreground/75" : "text-muted-foreground"
           }`}
         >
