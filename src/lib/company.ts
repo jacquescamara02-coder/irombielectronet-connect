@@ -62,7 +62,7 @@ export const services: Service[] = [
     title: "Vidéosurveillance IP & analogique",
     short:
       "Installation, configuration et maintenance de caméras IP et analogiques, salles CCTV et supervision à distance.",
-    image: images.installcam,
+    image: images.cameraResidence,
     gallery: [
       { src: images.installcam, caption: "Pose et réglage de caméra extérieure" },
       { src: images.cctv, caption: "Salle CCTV et mur d'écrans" },
