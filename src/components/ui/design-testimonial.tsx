@@ -72,7 +72,7 @@ export function Testimonial() {
     return () => clearInterval(timer);
   }, [reduceMotion]);
 
-  const current = testimonials[activeIndex];
+  const current = testimonials[activeIndex]!;
 
   return (
     <div
@@ -83,7 +83,7 @@ export function Testimonial() {
       {/* Oversized index number - bleeds off the left edge */}
       <motion.div
         aria-hidden="true"
-        style={reduceMotion ? undefined : { x: numberX, y: numberY }}
+        style={reduceMotion ? {} : { x: numberX, y: numberY }}
         className="pointer-events-none absolute top-1/2 -left-6 hidden -translate-y-1/2 select-none lg:block"
       >
         <AnimatePresence mode="wait">
@@ -229,7 +229,7 @@ export function Testimonial() {
         aria-hidden="true"
       >
         <motion.div
-          animate={reduceMotion ? undefined : { x: ["0%", "-50%"] }}
+          animate={reduceMotion ? {} : { x: ["0%", "-50%"] }}
           transition={{ duration: 30, ease: "linear", repeat: Infinity }}
           className="flex w-max gap-8 whitespace-nowrap text-xs font-semibold tracking-[0.28em] text-muted-foreground/50 uppercase"
         >
