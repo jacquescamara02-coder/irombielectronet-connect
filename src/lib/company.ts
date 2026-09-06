@@ -10,6 +10,7 @@ import brassageAsset from "@/assets/brassage.jpg.asset.json";
 import installcamAsset from "@/assets/installcam.jpg.asset.json";
 import cameraResidenceAsset from "@/assets/camera-residence.jpg.asset.json";
 import cctvAsset from "@/assets/cctv.jpg.asset.json";
+import heroLoopAsset from "@/assets/hero-loop.mp4.asset.json";
 import biometrieAsset from "@/assets/biometrie.jpg.asset.json";
 
 export const images = {
@@ -25,6 +26,7 @@ export const images = {
   installcam: installcamAsset.url,
   cameraResidence: cameraResidenceAsset.url,
   cctv: cctvAsset.url,
+  heroLoop: heroLoopAsset.url,
   biometrie: biometrieAsset.url,
 };
 

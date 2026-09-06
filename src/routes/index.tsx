@@ -119,8 +119,19 @@ function Home() {
       <main>
         {/* HERO */}
         <section className="surface-navy relative min-h-screen overflow-hidden bg-[image:var(--gradient-navy)]">
+          <video
+            className="absolute inset-0 h-full w-full object-cover opacity-45 motion-reduce:hidden"
+            src={images.heroLoop}
+            poster={images.heroCctv}
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="metadata"
+            aria-hidden="true"
+          />
           <div
-            className="absolute inset-0 opacity-35"
+            className="absolute inset-0 hidden opacity-35 motion-reduce:block"
             style={{
               backgroundImage: `url(${images.heroCctv})`,
               backgroundSize: "cover",
