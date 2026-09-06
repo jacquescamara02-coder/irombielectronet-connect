@@ -22,6 +22,8 @@ import realisation7Asset from "@/assets/realisation-7.jpg.asset.json";
 import realisation8Asset from "@/assets/realisation-8.jpg.asset.json";
 import realisation9Asset from "@/assets/realisation-9.jpg.asset.json";
 import realisation10Asset from "@/assets/realisation-10.jpg.asset.json";
+import realisation11Asset from "@/assets/realisation-11.jpg.asset.json";
+import realisation12Asset from "@/assets/realisation-12.jpg.asset.json";
 
 export const images = {
   logo: logoAsset.url,
