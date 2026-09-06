@@ -151,8 +151,7 @@ function Home() {
               <Reveal delay={180}>
                 <p className="mt-6 max-w-xl text-lg/8 text-primary-foreground/80">
                   {company.legal} installe, met en service et maintient vos caméras IP, vos baies
-                  informatiques, vos systèmes VHF et VoIP, vos liaisons point à point et vos accès
-                  sécurisés — pour les entreprises et les collectivités.
+                  informatiques, vos systèmes VHF et VoIP.
                 </p>
               </Reveal>
               <Reveal delay={260}>
