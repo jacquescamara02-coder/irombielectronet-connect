@@ -4,6 +4,7 @@ import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
 import { FloatingActions } from "@/components/site/FloatingActions";
 import { Reveal } from "@/components/site/Reveal";
+import { AuraBackground } from "@/components/ui/aura-background";
 import { company, services, whatsappLink } from "@/lib/company";
 
 export const Route = createFileRoute("/services/$slug")({
@@ -57,13 +58,14 @@ function ServicePage() {
   const others = services.filter((s) => s.slug !== service.slug).slice(0, 3);
 
   return (
-    <div id="top" className="min-h-screen bg-background">
+    <div id="top" className="carbon-page min-h-screen">
       <Header />
       <FloatingActions />
 
       <main>
-        <section className="surface-navy grid-tech relative overflow-hidden">
-          <div className="relative mx-auto max-w-7xl px-4 pt-32 pb-16 sm:px-6 lg:px-8 lg:pt-40 lg:pb-20">
+        <section className="surface-navy relative overflow-hidden">
+          <AuraBackground />
+          <div className="relative z-1 mx-auto max-w-7xl px-4 pt-32 pb-16 sm:px-6 lg:px-8 lg:pt-40 lg:pb-20">
             <Reveal>
               <BackControl />
             </Reveal>
@@ -78,7 +80,7 @@ function ServicePage() {
           </div>
         </section>
 
-        <section className="py-16 lg:py-24">
+        <section className="bg-background py-16 lg:py-24">
           <div className="mx-auto grid max-w-7xl gap-12 px-4 sm:px-6 lg:grid-cols-12 lg:px-8">
             <div className="lg:col-span-7">
               {service.paragraphs.map((p, i) => (
