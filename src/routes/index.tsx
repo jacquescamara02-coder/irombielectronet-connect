@@ -115,9 +115,9 @@ function Home() {
         <section className="surface-navy relative overflow-hidden">
           <div className="grid-tech absolute inset-0" aria-hidden="true" />
           <div
-            className="absolute inset-0 opacity-30"
+            className="absolute inset-0 opacity-35"
             style={{
-              backgroundImage: `url(${images.teamRack})`,
+              backgroundImage: `url(${images.heroCctv})`,
               backgroundSize: "cover",
               backgroundPosition: "center",
             }}
