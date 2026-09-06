@@ -24,7 +24,6 @@ import { CountUp } from "@/components/site/CountUp";
 import { ContactForm } from "@/components/site/ContactForm";
 import { MapEmbed } from "@/components/site/MapEmbed";
 import { TextBlockAnimation } from "@/components/ui/text-block-animation";
-import { BackgroundPaths } from "@/components/ui/background-paths";
 import { company, images, pillars, services, values, whatsappLink } from "@/lib/company";
 
 export const Route = createFileRoute("/")({
@@ -137,7 +136,6 @@ function Home() {
             }}
             aria-hidden="true"
           />
-          <BackgroundPaths className="opacity-70" />
           <div
             className="sweep-line pointer-events-none absolute inset-y-0 -left-1/3 w-1/3 bg-gradient-to-r from-transparent via-white/10 to-transparent"
             aria-hidden="true"
