@@ -23,6 +23,7 @@ import { Reveal } from "@/components/site/Reveal";
 import { CountUp } from "@/components/site/CountUp";
 import { ContactForm } from "@/components/site/ContactForm";
 import { MapEmbed } from "@/components/site/MapEmbed";
+import { CatalogueFan } from "@/components/site/CatalogueFan";
 import { TextBlockAnimation } from "@/components/ui/text-block-animation";
 import { AuraBackground } from "@/components/ui/aura-background";
 import { company, images, pillars, services, values, whatsappLink } from "@/lib/company";
@@ -333,6 +334,23 @@ function Home() {
               })}
             </div>
 
+          </div>
+        </section>
+
+        {/* CATALOGUE */}
+        <section id="catalogue" className="scroll-mt-28 overflow-hidden bg-background py-20 lg:py-28">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <ContextualSectionBack sectionId="catalogue" />
+            <Reveal>
+              <SectionTitle
+                eyebrow="Notre catalogue"
+                title="Une expertise complète, réunie en un seul regard"
+                text="Explorez nos solutions de sûreté, de réseau et de télécommunications. Sélectionnez une réalisation pour découvrir notre savoir-faire en détail."
+              />
+            </Reveal>
+            <Reveal delay={120}>
+              <CatalogueFan />
+            </Reveal>
           </div>
         </section>
 
