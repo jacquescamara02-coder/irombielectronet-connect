@@ -40,8 +40,8 @@
   --color-signal-foreground: var(--signal-foreground);
   --color-steel: var(--steel);
   --color-whatsapp: var(--whatsapp);
-  --font-display: "Barlow Condensed", "Arial Narrow", sans-serif;
-  --font-sans: "IBM Plex Sans", system-ui, sans-serif;
+  --font-display: "Montserrat", system-ui, sans-serif;
+  --font-sans: "Montserrat", system-ui, sans-serif;
 }
 
 :root {

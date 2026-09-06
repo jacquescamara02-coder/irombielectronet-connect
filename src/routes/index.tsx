@@ -18,7 +18,7 @@ import {
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
 import { FloatingActions } from "@/components/site/FloatingActions";
-import { BackButton } from "@/components/site/BackButton";
+import { ContextualSectionBack } from "@/components/site/ContextualSectionBack";
 import { Reveal } from "@/components/site/Reveal";
 import { CountUp } from "@/components/site/CountUp";
 import { ContactForm } from "@/components/site/ContactForm";
@@ -213,6 +213,7 @@ function Home() {
         {/* SOCIETE */}
         <section id="societe" className="scroll-mt-28 py-20 lg:py-28">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <ContextualSectionBack sectionId="societe" />
             <Reveal>
               <SectionTitle
                 eyebrow="La société"
@@ -262,15 +263,13 @@ function Home() {
               </div>
             </div>
 
-            <div className="mt-10">
-              <BackButton />
-            </div>
           </div>
         </section>
 
         {/* SERVICES */}
         <section id="services" className="scroll-mt-28 bg-secondary/60 py-20 lg:py-28">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <ContextualSectionBack sectionId="services" />
             <Reveal>
               <SectionTitle
                 eyebrow="Nos prestations"
@@ -316,15 +315,13 @@ function Home() {
               })}
             </div>
 
-            <div className="mt-10">
-              <BackButton />
-            </div>
           </div>
         </section>
 
         {/* REALISATIONS */}
         <section id="realisations" className="scroll-mt-28 py-20 lg:py-28">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <ContextualSectionBack sectionId="realisations" />
             <Reveal>
               <SectionTitle
                 eyebrow="Réalisations"
@@ -361,15 +358,13 @@ function Home() {
               ))}
             </div>
 
-            <div className="mt-10">
-              <BackButton />
-            </div>
           </div>
         </section>
 
         {/* VALEURS */}
         <section id="valeurs" className="surface-navy grid-tech scroll-mt-28 py-20 lg:py-28">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <ContextualSectionBack sectionId="valeurs" />
             <Reveal>
               <SectionTitle
                 light
@@ -391,15 +386,13 @@ function Home() {
               ))}
             </div>
 
-            <div className="mt-10">
-              <BackButton />
-            </div>
           </div>
         </section>
 
         {/* CONTACT */}
         <section id="contact" className="scroll-mt-28 py-20 lg:py-28">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <ContextualSectionBack sectionId="contact" />
             <Reveal>
               <SectionTitle
                 eyebrow="Contact"
@@ -471,9 +464,6 @@ function Home() {
               </div>
             </div>
 
-            <div className="mt-10">
-              <BackButton />
-            </div>
           </div>
         </section>
       </main>
