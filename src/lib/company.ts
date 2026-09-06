@@ -23,6 +23,7 @@ export const images = {
   incendie: incendieAsset.url,
   brassage: brassageAsset.url,
   installcam: installcamAsset.url,
+  cameraResidence: cameraResidenceAsset.url,
   cctv: cctvAsset.url,
   biometrie: biometrieAsset.url,
 };
