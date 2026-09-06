@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import {
   ArrowRight,
@@ -25,6 +24,7 @@ import { CountUp } from "@/components/site/CountUp";
 import { ContactForm } from "@/components/site/ContactForm";
 import { MapEmbed } from "@/components/site/MapEmbed";
 import { CatalogueFan } from "@/components/site/CatalogueFan";
+import { RealisationsGallery } from "@/components/site/RealisationsGallery";
 import { TextBlockAnimation } from "@/components/ui/text-block-animation";
 import { AuraBackground } from "@/components/ui/aura-background";
 import { Testimonial } from "@/components/ui/design-testimonial";
