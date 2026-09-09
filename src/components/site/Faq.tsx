@@ -3,7 +3,7 @@ import { Plus, Minus, MessageCircleQuestion } from "lucide-react";
 import { Reveal } from "@/components/site/Reveal";
 import { whatsappLink } from "@/lib/company";
 
-const faqs = [
+export const faqs = [
   {
     question: "Quels types de caméras de surveillance installez-vous ?",
     answer:

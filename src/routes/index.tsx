@@ -25,7 +25,7 @@ import { ContactForm } from "@/components/site/ContactForm";
 import { MapEmbed } from "@/components/site/MapEmbed";
 import { CatalogueFan } from "@/components/site/CatalogueFan";
 import { RealisationsGallery } from "@/components/site/RealisationsGallery";
-import { Faq } from "@/components/site/Faq";
+import { Faq, faqs } from "@/components/site/Faq";
 import { TextBlockAnimation } from "@/components/ui/text-block-animation";
 import { AuraBackground } from "@/components/ui/aura-background";
 import { Testimonial } from "@/components/ui/design-testimonial";
@@ -53,7 +53,44 @@ export const Route = createFileRoute("/")({
           "Vidéosurveillance, baies informatiques, télécommunications VHF et VoIP, contrôle d'accès et détection incendie à Port-Gentil.",
       },
       { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://www.irombi-electronet.com/" },
       { name: "twitter:card", content: "summary_large_image" },
+    ],
+    links: [{ rel: "canonical", href: "https://www.irombi-electronet.com/" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          name: company.legal,
+          description: company.baseline,
+          url: "https://www.irombi-electronet.com/",
+          email: company.email,
+          telephone: company.phones,
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "Nouvelle Route PG1",
+            addressLocality: "Port-Gentil",
+            addressCountry: "GA",
+            postOfficeBoxNumber: "2304",
+          },
+          areaServed: "Gabon",
+          openingHours: "Mo-Sa 07:30-18:00",
+        }),
+      },
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: faqs.map((f) => ({
+            "@type": "Question",
+            name: f.question,
+            acceptedAnswer: { "@type": "Answer", text: f.answer },
+          })),
+        }),
+      },
     ],
   }),
   component: Home,
