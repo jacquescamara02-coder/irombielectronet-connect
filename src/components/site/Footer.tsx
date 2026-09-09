@@ -9,13 +9,13 @@ export function Footer() {
       <AuraBackground />
       <div className="relative z-1 mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-6 lg:grid-cols-4 lg:px-8">
         <div className="lg:col-span-2">
-          <div className="inline-flex rounded-md bg-white p-3">
+          <div className="inline-flex rounded-lg bg-white p-4">
             <img
               src={images.logo}
               alt={`Logo ${company.name}`}
-              className="h-11 w-auto"
-              width={150}
-              height={44}
+              className="h-16 w-auto"
+              width={240}
+              height={64}
               loading="lazy"
             />
           </div>

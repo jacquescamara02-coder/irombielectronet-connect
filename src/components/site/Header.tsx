@@ -38,9 +38,9 @@ export function Header() {
           <img
             src={images.logo}
             alt={`Logo ${company.name}`}
-            className="h-10 w-auto sm:h-12"
-            width={140}
-            height={48}
+            className="h-14 w-auto sm:h-16"
+            width={220}
+            height={64}
           />
           <span className="sr-only">{company.name}</span>
         </Link>
