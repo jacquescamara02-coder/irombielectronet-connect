@@ -35,13 +35,15 @@ export function Header() {
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-6 px-4 py-3 sm:px-6 lg:px-8">
         <Link to="/" className="flex items-center gap-3">
-          <img
-            src={images.logo}
-            alt={`Logo ${company.name}`}
-            className="h-14 w-auto sm:h-16"
-            width={220}
-            height={64}
-          />
+          <span className="inline-flex rounded-md bg-white px-3 py-1.5 shadow-sm">
+            <img
+              src={images.logo}
+              alt={`Logo ${company.name}`}
+              className="h-11 w-auto sm:h-13"
+              width={220}
+              height={64}
+            />
+          </span>
           <span className="sr-only">{company.name}</span>
         </Link>
 
