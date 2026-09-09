@@ -16,7 +16,7 @@ export function CatalogueFan() {
         >
           <img
             src={service.image}
-            alt=""
+            alt={`${service.title} — installation réalisée par IROMBI-ELECTRONET à Port-Gentil`}
             className="catalogue-panel-image"
             loading="lazy"
             width={520}
