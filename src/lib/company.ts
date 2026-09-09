@@ -1,4 +1,4 @@
-import logoAsset from "@/assets/logo.jpg.asset.json";
+import logoAsset from "@/assets/logo-official.png.asset.json";
 import camerasAsset from "@/assets/cameras.jpg.asset.json";
 import teamRackAsset from "@/assets/team-rack.jpg.asset.json";
 import heroCctvAsset from "@/assets/hero-cctv.jpg.asset.json";
